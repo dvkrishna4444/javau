@@ -252,6 +252,7 @@ public class StudentGroup implements StudentArrayOperation {
 		int x=this.students.length,m=0,n=0;
 		for(int i=0;i<x;i++)
 		{if(this.students[i].getBirthDate().compareTo(firstDate)>=0 && this.students[i].getBirthDate().compareTo(lastDate)<=0){m++;}}
+		if(m==0){return null;}
 		Student[] s=new Student[m];
 		if(m !=0)
                 {
